@@ -1,10 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: "Work Sans", serif;
+}
+
+.primary-btn-bg {
+    background-color: #E02C6D;
+}
+
+.text-primary {
+    color: #3A3A3A;
+}
+
+.des-color {
+    color: #787885;
+}
+
+.flex {
+    display: flex;
+}
+
+.shadow {
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.pointer {
+    cursor: pointer;
 }

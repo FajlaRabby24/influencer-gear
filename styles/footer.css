@@ -1,0 +1,38 @@
+footer {
+    margin-top: 6rem;
+    background-color: #0a0826;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 300px;
+
+}
+
+.footer-title {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: .625rem;
+}
+
+.footer-des {
+    color: rgb(217, 219, 225);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.icon-container{
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1.2rem;
+}
+
+.icon-container i {
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #23213c;
+    padding: 8px;
+    border-radius: 50%;
+}

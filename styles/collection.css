@@ -1,0 +1,73 @@
+.collection {
+    margin-top: 4.2rem;
+}
+
+.collection>h3 {
+    color: rgb(58, 58, 58);
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.card-img img {
+    width: 100%;
+    border: 2px dashed #ccc;
+}
+
+.card-content{
+    padding: 0 0 1rem .1rem;
+}
+
+.card-title {
+    color: rgb(24, 25, 31);
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 1rem 0 .375rem;
+}
+
+.price {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: .6875rem;
+}
+
+.card-content p i{
+    color: orange;
+}
+
+.card-content>.des-color {
+    color: rgb(120, 120, 133);
+    font-size: 0.875rem;
+    font-weight: 700;
+    width: 336px;
+    margin-top: .25rem;
+}
+
+
+/* media query */
+@media screen and (max-width: 576px) {
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 24px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 24px;
+    }
+}

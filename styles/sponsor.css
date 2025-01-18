@@ -1,0 +1,45 @@
+.sponsor {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4.2rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 40px;
+}
+
+
+/* media query */
+@media screen and (max-width: 576px) {
+    .sponsor {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+    .sponsor img:nth-child(5),
+    .sponsor img:nth-child(6),
+    .sponsor img:nth-child(7) {
+        grid-column: span 1;
+        /* নির্দিষ্ট ইমেজগুলোকে সেন্টারে আনা */
+        justify-self: center;text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .sponsor {
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        padding: 40px 24px;
+    }
+
+    .sponsor img:nth-child(6),
+    .sponsor img:nth-child(7) {
+        grid-column: span 2;
+        /* নির্দিষ্ট ইমেজগুলোকে সেন্টারে আনা */
+        justify-self: center;
+    }
+}

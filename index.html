@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/sponsor.css">
     <link rel="stylesheet" href="styles/collection.css">
+    <link rel="stylesheet" href="styles/feature.css">
 </head>
 
 <body>
@@ -46,7 +47,7 @@
     </header>
     <main>
         <!-- sponsor section  -->
-        <!-- <section class="sponsor container">
+        <section class="sponsor flex container">
             <img src="assets/logos/Alibaba.svg" alt="Alibaba image">
             <img src="assets/logos/Amazon.svg" alt="Amazon image">
             <img src="assets/logos/Daraz.pk Logo.svg" alt="Daraz image">
@@ -54,12 +55,12 @@
             <img src="assets/logos/Rakuten.svg" alt="Rakuten image">
             <img src="assets/logos/Walmart.svg" alt="Walmart image">
             <img src="assets/logos/Target.svg" alt="Target image">
-        </section> -->
+        </section>
 
         <!-- collection section  -->
         <section class="collection container">
             <h3>Popular Collection</h3>
-            <div class="card-container container">
+            <div class="card-container">
                 <div class="card shadow">
                     <div class="card-img"><img src="assets/images/tripod.png" alt="tripod"></div>
                     <div class="card-content">
@@ -151,8 +152,20 @@
                     </div>
                 </div>
             </div>
+            <h5 class="see-more pointer"><span style="margin-right: .5rem;">See More</span><i class="fa-solid fa-arrow-right"></i></h5>
         </section>
 
+        <!-- product feature -->
+         <section class="feature flex container">
+            <div class="feature-img">
+                <img src="assets/images/gear.png" alt="gear image">
+            </div>
+            <div class="feature-content">
+                <h2 class="feature-title text-primary">Featured products at one place</h2>
+                <p class="des-color">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button class="primary-btn-bg pointer"><span style="margin-right: .5rem;">Join Now</span> <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+         </section>
     </main>
 </body>
 

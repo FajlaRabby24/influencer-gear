@@ -1,5 +1,5 @@
 .collection {
-    margin-top: 4.2rem;
+    margin-top: 6.25rem;
 }
 
 .collection>h3 {
@@ -8,6 +8,14 @@
     font-weight: 600;
     text-align: center;
     margin-bottom: 2rem;
+}
+
+.collection> .see-more {
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 3.125rem;
 }
 
 .card-container {
@@ -26,7 +34,7 @@
     border: 2px dashed #ccc;
 }
 
-.card-content{
+.card-content {
     padding: 0 0 1rem .1rem;
 }
 
@@ -44,7 +52,7 @@
     margin-bottom: .6875rem;
 }
 
-.card-content p i{
+.card-content p i {
     color: orange;
 }
 
@@ -59,15 +67,23 @@
 
 /* media query */
 @media screen and (max-width: 576px) {
-    .card-container{
+    .card-container {
         grid-template-columns: repeat(1, 1fr);
         padding: 24px;
+    }
+    .collection> .see-more {
+        margin-top: 2.5rem;
+        padding-right: 1.5rem;
     }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .card-container{
+    .card-container {
         grid-template-columns: repeat(2, 1fr);
         padding: 24px;
+    }
+    .collection> .see-more {
+        margin-top: 2.5rem;
+        padding-right: 1.5rem;
     }
 }

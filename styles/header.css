@@ -20,7 +20,18 @@ nav li a {
     text-decoration: none;
     color: #3a3a3a;
     font-size: 1rem;
+    position: relative;
     font-weight: 600;
+}
+
+#dot {
+    width: 10px;
+    height: 10px;
+    background-color: #E02C6D;
+    position: absolute;
+    top: -10px;
+    right: -7px;
+    border-radius: 50%;
 }
 
 .banner {
@@ -75,10 +86,11 @@ nav li a {
 
 /* media query */
 @media screen and (max-width: 576px) {
-    nav{
+    nav {
         padding: 20px 24px;
         justify-items: center;
     }
+
     nav>ul li {
         display: none;
     }

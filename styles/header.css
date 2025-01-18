@@ -48,6 +48,10 @@ nav li a {
     color: rgb(58, 58, 58);
     font-size: 3.25rem;
     font-weight: 700;
+    animation-name: banner-title;
+    animation-duration: .5s;
+    
+
 }
 
 .banner-content>p {
@@ -55,6 +59,9 @@ nav li a {
     font-size: 1rem;
     font-weight: 600;
     margin: 2rem 0;
+    animation-name: banner-des;
+    animation-duration: .9s;
+    /* animation-delay: .5s; */
 }
 
 .banner-content>button {
@@ -64,6 +71,8 @@ nav li a {
     color: #fff;
     font-size: 1rem;
     font-weight: 700;
+    animation-name: banner-btn;
+    animation-duration: 1.2s;
 }
 
 .banner-img {
@@ -75,12 +84,66 @@ nav li a {
     width: 100%;
 }
 
+.main-camera{
+    animation-name: float;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
 #mobile-icon {
     display: none;
 }
 
 #mobile-icon a {
     font-size: 1.9rem;
+}
+
+
+/* animation  */
+
+@keyframes banner-title {
+    0%{
+        transform: translateX(-13rem);
+        opacity: .7;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes banner-des {
+    0%{
+        transform: translateX(-15rem);
+        opacity: .7;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes banner-btn {
+    0%{
+        transform: translateX(-18rem);
+        opacity: .7;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(0.8rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 
